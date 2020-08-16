@@ -1,0 +1,39 @@
+
+        <section id="mu-menu">
+            <nav class="navbar navbar-default" role="navigation">  
+                <div class="container">
+                    <div class="navbar-header">
+                    <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="background:#ff871c;border: none">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- LOGO -->              
+                        <!-- TEXT BASED LOGO -->
+                        <a class="navbar-brand" href="index.html"><i class="fa fa-university"></i><span></span></a>
+                        <!-- IMG BASED LOGO  -->
+                        <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                            <li class="active"><a href="{% url 'core:home' %}">મુખપૃષ્ટ</a></li>            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">અમારા વિષય <span class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="{% url 'core:history' %}">ઇતિહાસ</a></li>                
+                                    <li><a href="{% url 'core:school_family' %}">શાળા પરિવાર</a></li>
+                                    <!-- <li><a href="{% url 'core:memories' %}">યાદો</a></li>
+                                    <li><a href="{% url 'core:co_curricular' %}">સહ અભ્યાસક્રમ પ્રવૃત્તિઓ</a></li> -->
+                                </ul>
+                            </li>           
+                            <li><a href="{% url 'core:gallery' %}">ચિત્રખંડ</a></li>
+                            <li><a href="{% url 'core:admission' %}">પ્રવેશના નિયમ</a></li>            
+                            <li><a href="{% url 'core:contact' %}">સંપર્ક</a></li>
+                            <li><a href="{% url 'core:result' %}">પરિણામ</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </nav>
+        </section>
