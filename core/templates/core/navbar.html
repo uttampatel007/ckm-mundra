@@ -1,4 +1,24 @@
 
+
+        {% url 'core:home' as home_url %}
+        {% url 'core:contact' as contact_url %}
+        {% url 'core:gallery' as gallery_url %}
+        {% url 'core:result' as result_url %}
+        {% url 'core:admission' as admission_url %}
+        {% url 'core:history' as history_url %}
+        {% url 'core:school_family' as school_family_url %}
+        
+
+
+        
+        <style>
+            .active-2 {
+                background-color: #ff871c;
+            }
+            .active-2 a {
+                color: white;
+            }
+        </style>
         <section id="mu-menu">
             <nav class="navbar navbar-default" role="navigation">  
                 <div class="container">
@@ -18,20 +38,20 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                            <li class="active"><a href="{% url 'core:home' %}">મુખપૃષ્ટ</a></li>            
+                            <li {% if request.path == home_url %} class="active" {%endif%}><a href="{% url 'core:home' %}">મુખપૃષ્ટ</a></li>            
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">અમારા વિષય <span class="fa fa-angle-down"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="{% url 'core:history' %}">ઇતિહાસ</a></li>                
-                                    <li><a href="{% url 'core:school_family' %}">શાળા પરિવાર</a></li>
+                                    <li {% if request.path == history_url %} class="active-2" {%endif%}><a href="{% url 'core:history' %}">ઇતિહાસ</a></li>                
+                                    <li {% if request.path == school_family_url %} class="active-2" {%endif%}><a href="{% url 'core:school_family' %}">શાળા પરિવાર</a></li>
                                     <!-- <li><a href="{% url 'core:memories' %}">યાદો</a></li>
                                     <li><a href="{% url 'core:co_curricular' %}">સહ અભ્યાસક્રમ પ્રવૃત્તિઓ</a></li> -->
                                 </ul>
                             </li>           
-                            <li><a href="{% url 'core:gallery' %}">ચિત્રખંડ</a></li>
-                            <li><a href="{% url 'core:admission' %}">પ્રવેશના નિયમ</a></li>            
-                            <li><a href="{% url 'core:contact' %}">સંપર્ક</a></li>
-                            <li><a href="{% url 'core:result' %}">પરિણામ</a></li>
+                            <li {% if request.path == gallery_url %} class="active" {%endif%}><a href="{% url 'core:gallery' %}">ચિત્રખંડ</a></li>
+                            <li {% if request.path == admission_url %} class="active" {%endif%}><a href="{% url 'core:admission' %}">પ્રવેશના નિયમ</a></li>            
+                            <li {% if request.path == contact_url %} class="active" {%endif%}><a href="{% url 'core:contact' %}">સંપર્ક</a></li>
+                            <li  {% if request.path == result_url %} class="active" {%endif%}><a href="{% url 'core:result' %}">પરિણામ</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>

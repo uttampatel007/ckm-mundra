@@ -1,4 +1,9 @@
 {% extends 'core/base.html' %}
+
+{% block title %}
+<title>સંપર્ક - CKM</title>
+{% endblock %}
+
 {% block content %}
   <!--START SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#">
@@ -35,7 +40,11 @@
                             <div class="row">
                                 <div class="col-md-6"  style="border-right: 1px solid black;">
                                     <div class="mu-contact-left">
-                                        <form class="contactform">                  
+                                        {% if submit_message %}
+                                            {{submit_message}}
+                                        {% else %}
+                                        <form class="contactform" target="{% url 'core:contact' %}" method="POST">
+                                            {% csrf_token %}                  
                                             <p class="comment-form-author">
                                                 <label for="author">નામ <span class="required">*</span></label>
                                                 <input type="text" required="required" size="30" value="" name="author">
@@ -56,6 +65,7 @@
                                                 <input style="background-color: #ff871c;color: white;" type="submit" value="સંદેશ  મોકલો" class="mu-post-btn" name="submit">
                                             </p>        
                                         </form>
+                                        {% endif %}
                                     </div>
                                 </div>
                                 <div class="col-md-6">

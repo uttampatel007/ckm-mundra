@@ -1,0 +1,374 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}
+<title>શાળા પરિવાર</title>
+{% endblock %}
+{% block content %}
+<style type="text/css" media="screen"> 
+      .customTable thead, .customTable tfoot{
+          background-color: #e9ecef;
+          color: #495057;
+          text-align: center;
+      }
+
+      .customTable table thead th, .customTable table tbody td, .customTable table tfoot th,.customTable table tfoot td{
+          padding: 1.5%;
+      }
+
+      .customTable tbody{
+          background-color: #343a40;
+          color: #fff; 
+      }
+
+      .customTable tbody tr:hover{
+          background-color: #696969;
+      }
+
+      .customTable table{
+          text-align: center;
+      }
+  </style>
+  <!--START SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>      
+    </a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+        <!-- Page breadcrumb -->
+        <section id="mu-page-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-page-breadcrumb-area">
+                            <h2>શાળા પરિવાર</h2>
+                            <ol class="breadcrumb">
+                                <li><a href="#">મુખપૃષ્ટ</a></li>            
+                                <li class="active">શાળા પરિવાર</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End breadcrumb -->
+        <!-- Start our teacher -->
+  <section id="mu-our-teacher">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-our-teacher-area">
+            <!-- begain title -->
+            <!-- <div class="mu-title">
+              <h2>શાળા પરિવાર</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, repudiandae, suscipit repellat minus molestiae ea.</p>
+            </div> -->
+            <!-- end title -->
+            <!-- begain our teacher content -->
+            <div class="mu-our-teacher-content">
+                <div class="row">
+                    <div class="text-center">
+                        <img src="{% static 'core/assets/img/teachers/1 H.B.J..jpg' %}" alt="teacher img" style="max-width: 300px;">
+                        <div class="mu-ourteacher-single-content">
+                            <h4>ડૉ. હિના ભાનુશંકર જાની</h4>
+                            <span>પ્રિન્સિપાલ</span><br>
+                            <p>પી.ટી.સી,એમ.એ,એમ.એડ, પીએચ.ડી ૯૮૭૯૪૫૮૩૨૮.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="mu-title" style="margin-top: 5%;">
+              <h2>માધ્યમિક વિભાગ ઉચ્ચમાધ્યમિક વિભાગ</h2>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, repudiandae, suscipit repellat minus molestiae ea.</p> -->
+            </div>
+            <div class="mu-our-teacher-content">
+              <div class="row">
+                <div class="col-lg-4 col-md-4  col-sm-4">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'core/assets/img/teachers/2 D.L.P..jpg' %}" alt="teacher img" style="height: 60vh;">
+                     
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>પરમાર દમયંતીબેન લક્ષ્મણભાઇ</h4>
+                      <span>વિષયો: સામાજિક વિજ્ઞાન,ભૂગોળ</span>
+                      <p>લાયકાત: એમ.એ, બી.એડ<br>મોબાઈલ: ૯૩૨૮૧૮૧૫૨૦</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'core/assets/img/teachers/3 K.Z.G..jpg' %}" alt="teacher img" style="height: 60vh;">
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>ગોહિલ કનૈયાલાલ ઝવેરભાઈ</h4>
+                      <span>વિષયો: અંગ્રેજી,હિન્દી</span>
+                      <p>લાયકાત: બી.એ, બી.એડ<br>મોબાઈલ: ૯૭૨૭૫૫૩૬૭૧</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'core/assets/img/teachers/4 U.J.P..jpg' %}" alt="teacher img" style="height: 60vh;">
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>પટેલ ઉષાબેન જયસિંહભાઈ</h4>
+                      <span>વિષયો : હિન્દી, ગુજરાતી</span>
+                      <p>લાયકાત:બી.આર,એસ.ડી, બી.એડ<br>મોબાઈલ: ૯૯૧૩૨૦૪૨૦૫</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mu-title" style="margin-top: 5%;">
+              <h2>ઉચ્ચમાધ્યમિક વિભાગ</h2>
+            </div>
+            <div class="mu-our-teacher-content">
+              <div class="row">
+                <div class="col-lg-4 col-md-4  col-sm-4">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'core/assets/img/teachers/5 P.R.K..jpg' %}" alt="teacher img" style="height: 60vh;">
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>ર્ડા.પૂજા રમેશચંદ્ર કેવડિયા</h4>
+                      <span>વિષયો : સંસ્કૃત, ગુજરાતી</span>
+                      <p>લાયકાત: એમ.એ, એમ.એડ., પીએચ.ડી<br>મોબાઈલ: ૯૯૧૩૬૮૮૫૪૩ </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'core/assets/img/teachers/6 N.J.M..jpg' %}" alt="teacher img" style="height: 60vh;">
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>નિરાલી જયંતીલાલ મહીચ્ચ્છા</h4>
+                      <span>વિષયો : અંગ્રેજી, સમાજશાસ્ત્ર</span>
+                      <p>લાયકાત: એમ.એ, બી.એડ., પીએચ.ડી<br>મોબાઈલ: ૯૭૨૭૩૨૩૪૧૯</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'core/assets/img/teachers/7 M.R.J..jpg' %}" alt="teacher img" style="height: 60vh;">
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>મયુરીબા રણજીતસિંહ જાડેજા </h4>
+                      <span>વિષયો : નામુ, અર્થશાસ્ત્ર, એસ.પી</span>
+                      <p>લાયકાત: એમ.કોમ, બી.એડ.<br>મોબાઈલ: ૮૯૦૫૭૨૯૪૪૫</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <!-- End our teacher content -->
+            <div class="mu-title" style="margin-top: 5%;">
+              <h2>માનદ શિક્ષકો</h2>
+            </div>
+            <div class="mu-our-teacher-content">
+              <div class="row">
+                <div class="col-lg-3 col-md-3  col-sm-4">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'core/assets/img/teachers/8 P.H.K..jpg' %}" alt="teacher img" style="height: 60vh;">
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>પરીનબેન હસનળી ખોજા</h4>
+                      <span>વિષયો : વિજ્ઞાન, ગણિત<br>વિભાગ: માધ્યમિક</span>
+                      <p>લાયકાત: બી.એસસી, એમ.એડ, બી.એ.<br>મોબાઈલ: ૯૯૨૫૪૨૭૩૭૮</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'core/assets/img/teachers/9 H.H.G..jpg' %}" alt="teacher img" style="height: 60vh;">
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>હેતા હરેશભાઇ ગોહિલ</h4>
+                      <span>વિષયો : સમાજશાસ્ત્ર, નામુ<br>વિભાગ: માધ્યમિક</span>
+                      <p>લાયકાત: બી.એસસી,  બી.એડ.<br>મોબાઈલ: ૮૭૫૮૬૬૪૧૯૭</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'core/assets/img/teachers/10 P.B.B..jpg' %}" alt="teacher img" style="height: 60vh;">
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>પૂજા ભૌમીકભાઈ ભટ્ટ</h4>
+                      <span>વિષયો : અર્થશાસ્ત્ર, નામુ<br>વિભાગ:ઉચ્ચમાધ્યમિક</span>
+                      <p>લાયકાત: એમ.કોમ, બી.એડ.<br>મોબાઈલ: ૯૯૯૮૪૪૪૦૨૧</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'core/assets/img/teachers/11 S.C.J..jpg' %}" alt="teacher img" style="height: 60vh;">
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>શ્રેયા ચેતનભાઈ જાની</h4>
+                      <span>વિષયો : ગુજરાતી, હિન્દી<br>વિભાગ:ઉચ્ચમાધ્યમિક</span>
+                      <p>લાયકાત: બી.એડ., એમ.એડ.<br>મોબાઈલ: ૯૯૯૮૪૪૪૦૨૧</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'core/assets/img/teachers/12 S.D.J..jpg' %}" alt="teacher img" style="height: 60vh;">
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>સુરુચિ ધર્મેન્દ્રભાઈ જેસર</h4>
+                      <span>વિષયો : કમ્પ્યુટર<br>વિભાગ:ઉચ્ચમાધ્યમિક</span>
+                      <p>લાયકાત: બી.બી.એ<br>મોબાઈલ: ૮૭૫૮૫૪૮૨૩૪</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mu-our-teacher-content">
+              <div class="row">
+                <div class="col-lg-3 col-md-3  col-sm-4">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'core/assets/img/teachers/13 V.R.O..jpg' %}" alt="teacher img" style="height: 60vh;">
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>વાલજી રામજીભાઈ ઓઝા</h4>
+                      <span>હોદો : સી.ક્લાર્ક</span>
+                      <p>લાયકાત: ધોરણ 10 પાસ.<br>મોબાઈલ: ૯૪૨૭૪૩૫૩૩૫</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'core/assets/img/teachers/14 K.V.S..jpg' %}" alt="teacher img" style="height: 60vh;">
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>કેતન વાલજીભાઇ સોલંકી</h4>
+                      <span>હોદો : જુ.ક્લાર્ક</span>
+                      <p>લાયકાત: બ.એ , એલ.એલ.બી.<br>મોબાઈલ: ૯૯૦૪૧૩૧૩૩૧</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mu-our-teacher-content">
+              <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-4">
+                        <div class="mu-our-teacher-single">
+                            <figure class="mu-our-teacher-img">
+                                <img src="{% static 'core/assets/img/teachers/15 K.K.J..jpg' %}" alt="teacher img" style="height: 60vh;">
+                            </figure>                    
+                            <div class="mu-ourteacher-single-content">
+                                <h4>કાજલબેન કિરણભાઈ જોશી</h4>
+                                <span>હોદો : પટાવાળા</span>
+                                <p>લાયકાત: ધોરણ ૮ પાસ.<br>મોબાઈલ: ૬૩૫૯૦૪૯૭૩૫</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                   
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- End our teacher --> 
+    <section>
+        <div class="container">
+            <div class="row">                
+            
+            <div class="mu-title">
+                <h3><b>સી.કે.એમ કન્યા વિદ્યાલય મુન્દ્રા</b><br><br>વર્ગવાર-જાતિવાર વિદ્યાર્થીઓની સંખ્યા-૨૦૨૦-૨૧</h3><br>
+            </div>
+            <div class="table-responsive|table-responsive-sm|table-responsive-md|table-responsive-lg|table-responsive-xl customTable">
+                <table class="table table-dark table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="text-center" style="">જાતિ ધોરણ</th>
+                            <th class="text-center">અ.જા</th>
+                            <th class="text-center">અ.જ.જા</th>
+                            <th class="text-center">બક્ષીપંચ</th>
+                            <th class="text-center">અન્ય</th>
+                            <th class="text-center">કુલ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>૯.અ</td>
+                            <td>૧૬</td>
+                            <td>૦૧</td>
+                            <td>૨૩</td>
+                            <td>૩૦</td>
+                            <td>૭૦</td>
+                        </tr>
+                        <tr>
+                            <td>૯.બ</td>
+                            <td>૨૮</td>
+                            <td>૦૧</td>
+                            <td>૨૦</td>
+                            <td>૧૬</td>
+                            <td>૬૫</td>
+                        </tr>
+                        <tr>
+                            <td>૧૦.અ</td>
+                            <td>૨૩</td>
+                            <td>૦૨</td>
+                            <td>૨૩</td>
+                            <td>૨૭</td>
+                            <td>૭૫</td>
+                        </tr>
+                        <tr>
+                            <td>૧૦.બ</td>
+                            <td>૩૨</td>
+                            <td>-</td>
+                            <td>૨૧</td>
+                            <td>૨૦</td>
+                            <td>૭૩</td>
+                        </tr>
+                        <tr>
+                            <td>૧૧</td>
+                            <td>૨૮</td>
+                            <td>-</td>
+                            <td>૨૬</td>
+                            <td>૩૦</td>
+                            <td>૮૪</td>
+                        </tr>
+                        <tr>
+                            <td>૧૨</td>
+                            <td>૩૨</td>
+                            <td>૦૨</td>
+                            <td>૨૮</td>
+                            <td>૩૮</td>
+                            <td>૧૦૦</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th class="text-center">કુલ</th>
+                            <td>૧૫૯</td>
+                            <td>૦૬</td>
+                            <td>૧૪૧</td>
+                            <td>૧૬૧</td>
+                            <td>૪૬૭</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+             
+            </div>  
+        </div>
+    </section>
+    
+<br>
+
+  {% endblock %}
