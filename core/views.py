@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from . models import Contact
+from ckm.settings import EMAIL_HOST_USER
+from django.core.mail import send_mail
+
 
 def home(request):
 	return render(request,'core/index.html')
@@ -26,6 +29,11 @@ def contact(request):
 
 		submit_message = " આભાર. અમે જલ્દી જ તમારો સંપર્ક કરીશું."
 		context = {'submit_message':submit_message}
+
+		recepient = 'uttam11.velani11@gmail.com'
+		message1 = 'Message From website \n NAME : %s \n EMAIL: %s \n SUBJECT: %s \n MESSAGE: %s' %(name,email,subject,message)
+		send_mail(subject, message1, EMAIL_HOST_USER, [recepient], fail_silently = False)
+
 		return render(request, 'core/contact.html',context)
 	else:
 		return render(request, 'core/contact.html')
