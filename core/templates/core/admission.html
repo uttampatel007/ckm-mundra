@@ -1,4 +1,5 @@
 {% extends 'core/base.html' %}
+{% load static %}
 {% block title %}
 <title>શાળાના નિયમ</title>
 {% endblock %}
@@ -160,7 +161,7 @@
                                         <li>સતત ત્રણ દિવસ સુધી જાણ કાર્ય વગર ગેરહાજર રેહનાર વિદ્યાર્થીનું નિયમ અનુસાર શાળામાંથી નામ કમી કરવામાં આવશે.</li><br>
                                         <li>વિદ્યાર્થિનીએ વર્ગકાર્ય અને ગૃહકાર્ય ફરજીયાત કરવાનું રહેશે.</li><br>
                                         <li>સાળાએ આવવા જવા માટે વિદ્યાર્થિની સાયકલ સિવાય કોઈ પણ પ્રકારના ટુ વ્હીલર સાધનનો ઉપયોગ કરી શકશે નહી.
-                                        </li>
+                                        </li><br>
                                         <li>શાળામાં વિદ્યાર્થિનીએ મોબાઈલ લઇ આવવા પર સખત પ્રતિબંધ છે.</li><br>
                                     </ul>
                                 </div>
@@ -172,13 +173,6 @@
         </div>
     </section>
     <!-- End about us -->	
-    <section>
-        <div class="container" style="align-items: center;">
-            <p style="text-align: center;">શાળામાં પ્રવેશ મેળવવા માટે નીચે આપેલી લિંક દ્વારા ફોર્મ ને ડાઉનલોડ કરવાનું રહશે.</p>
-            <button class="btn" style="width: 100%;outline: none;"><i class="fa fa-download"></i> Download
-            </button>
-        </div>
-    </section>
     <section id="mu-about-us" style="margin-bottom: -3%;margin-top: -3%;font-size: 20px;">
         <div class="container">
             <div class="row">
@@ -218,5 +212,15 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container" style="align-items: center;">
+            <p style="text-align: center;">શાળામાં પ્રવેશ મેળવવા માટે નીચે આપેલી લિંક દ્વારા ફોર્મ ને ડાઉનલોડ કરવાનું રહશે.</p>
+            <form method="GET" action="{% static 'core/assets/add.pdf' %}">
+                <button class="btn" style="width: 100%;outline: none;"><i class="fa fa-download"></i> Download
+                </button>
+            </form>
+        </div>
+    </section>
+
     <br>
 {% endblock %}>
