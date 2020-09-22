@@ -1,5 +1,57 @@
   {% extends 'core/base.html' %}
+  {% load static %}
+  {% block title %}
+<title>યાદેં</title>
+{% endblock %}
   {% block content %}
+  <style>
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+    
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+    
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+    
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    </style>
   <!--START SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#">
       <i class="fa fa-angle-up"></i>      
@@ -11,10 +63,10 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="mu-page-breadcrumb-area">
-                            <h2>ચિત્રખંડ</h2>
+                            <h2>યાદેં</h2>
                             <ol class="breadcrumb">
                                 <li><a href="#">મુખપૃષ્ટ</a></li>            
-                                <li class="active">ચિત્રખંડ</li>
+                                <li class="active">યાદેં</li>
                             </ol>
                         </div>
                     </div>
@@ -22,157 +74,276 @@
             </div>
         </section>
         <!-- End breadcrumb -->
-        <!-- Start gallery  -->
-        <section id="mu-gallery">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="mu-gallery-area">
-                        <!-- start title -->
-                            
-                        <!-- end title -->
-                        <!-- start gallery content -->
-                            <div class="mu-gallery-content">
-                            <!-- Start gallery menu -->
-                                
-                            <!-- End gallery menu -->
-                                <div class="mu-gallery-body">
-                                    <ul id="mixit-container" class="row">
-                                    <!-- start single gallery image -->
-                                        <li class="col-md-4 col-sm-6 col-xs-12 mix lab">
-                                            <div class="mu-single-gallery">                  
-                                                <div class="mu-single-gallery-item">
-                                                    <div class="mu-single-gallery-img">
-                                                        <a href="#"><img alt="image of lab" src="F:/User/gamer.jpg"></a>
-                                                    </div>
-                                                    <div class="mu-single-gallery-info">
-                                                        <div class="mu-single-gallery-info-inner">
-                                                            <h4>Racing</h4>
-                                                            <p>Gaming</p>
-                                                            <a href="F:/User/gamer.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
-                                                            <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
-                                                        </div>
-                                                    </div>                  
-                                                </div>
-                                            </div>
-                                        </li>
-                                    <!-- start single gallery image -->
-                                        <li class="col-md-4 col-sm-6 col-xs-12 mix library">
-                                            <div class="mu-single-gallery">                  
-                                                <div class="mu-single-gallery-item">
-                                                    <div class="mu-single-gallery-img">
-                                                        <a href="#"><img alt="img" src="assets/img/gallery/small/2.jpg"></a>
-                                                    </div>
-                                                    <div class="mu-single-gallery-info">
-                                                        <div class="mu-single-gallery-info-inner">
-                                                            <h4>Image Title</h4>
-                                                            <p>Animation</p>
-                                                            <a href="assets/img/gallery/big/2.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
-                                                            <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
-                                                        </div>
-                                                    </div> 
-                                                </div>
-                                            </div>
-                                        </li>
-                                    <!-- start single gallery image -->
-                                        <li class="col-md-4 col-sm-6 col-xs-12 mix classroom">
-                                            <div class="mu-single-gallery">                  
-                                                <div class="mu-single-gallery-item">
-                                                    <div class="mu-single-gallery-img">
-                                                        <a href="#"><img alt="img" src="assets/img/gallery/small/3.jpg"></a>
-                                                    </div>
-                                                    <div class="mu-single-gallery-info">
-                                                        <div class="mu-single-gallery-info-inner">
-                                                            <h4>Image Title</h4>
-                                                            <p>Math</p>
-                                                            <a href="assets/img/gallery/big/3.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
-                                                            <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    <!-- start single gallery image -->
-                                        <li class="col-md-4 col-sm-6 col-xs-12 mix cafe">
-                                            <div class="mu-single-gallery">                  
-                                                <div class="mu-single-gallery-item">
-                                                    <div class="mu-single-gallery-img">
-                                                        <a href="#"><img alt="img" src="assets/img/gallery/small/3.jpg"></a>
-                                                    </div>
-                                                    <div class="mu-single-gallery-info">
-                                                        <div class="mu-single-gallery-info-inner">
-                                                            <h4>Image Title</h4>
-                                                            <p>Math</p>
-                                                            <a href="assets/img/gallery/big/3.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
-                                                            <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!-- start single gallery image -->
-                                        <li class="col-md-4 col-sm-6 col-xs-12 mix others">
-                                            <div class="mu-single-gallery">                  
-                                                <div class="mu-single-gallery-item">
-                                                    <div class="mu-single-gallery-img">
-                                                        <a href="#"><img alt="img" src="assets/img/gallery/small/3.jpg"></a>
-                                                    </div>
-                                                    <div class="mu-single-gallery-info">
-                                                        <div class="mu-single-gallery-info-inner">
-                                                            <h4>Image Title</h4>
-                                                            <p>Math</p>
-                                                            <a href="assets/img/gallery/big/3.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
-                                                            <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!-- start single gallery image -->
-                                        <li class="col-md-4 col-sm-6 col-xs-12 mix library">
-                                            <div class="mu-single-gallery">                  
-                                                <div class="mu-single-gallery-item">
-                                                    <div class="mu-single-gallery-img">
-                                                        <a href="#"><img alt="img" src="assets/img/gallery/small/3.jpg"></a>
-                                                    </div>
-                                                    <div class="mu-single-gallery-info">
-                                                        <div class="mu-single-gallery-info-inner">
-                                                            <h4>Image Title</h4>
-                                                            <p>Math</p>
-                                                            <a href="assets/img/gallery/big/3.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
-                                                            <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!-- start single gallery image -->
-                                        <li class="col-md-4 col-sm-6 col-xs-12 mix classroom">
-                                            <div class="mu-single-gallery">                  
-                                                <div class="mu-single-gallery-item">
-                                                    <div class="mu-single-gallery-img">
-                                                        <a href="#"><img alt="img" src="assets/img/gallery/small/3.jpg"></a>
-                                                    </div>
-                                                    <div class="mu-single-gallery-info">
-                                                        <div class="mu-single-gallery-info-inner">
-                                                            <h4>Image Title</h4>
-                                                            <p>Math</p>
-                                                            <a href="assets/img/gallery/big/3.jpg" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
-                                                            <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>            
-                                </div>
-                            </div>
-                        <!-- end gallery content -->
+        <section>
+            <div class="container" style="margin-top: 20px;display: inline;">
+                <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/1.jpg' %}" alt="Cinque Terre" width="600" height="400">
+                      </a>
+                      <div class="desc">ધ્વજવંદન</div>
                     </div>
-                </div>
+                  </div>
+                  
+                  
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/ધ્વજવંદન૧.jpg' %}" alt="Forest" width="600" height="400">
+                      </a>
+                      <div class="desc">ધ્વજવંદન</div>
+                    </div>
+                  </div>
+                  
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/ધ્વજવંદન 5.jpg' %}" alt="Northern Lights" width="600" height="400">
+                      </a>
+                      <div class="desc">ધ્વજવંદન</div>
+                    </div>
+                  </div>
+                  
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/ભુમી પૂજન 1.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">ભુમી પૂજન</div>
+                    </div>
+                  </div>
+
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/ભુમી પૂજન.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">ભુમી પૂજન</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/ધો.12 100% સન્માન.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">ધો.12 100% સન્માન</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/ધો.12 વિદાયમાન.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">ધો.12 વિદાયમાન</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/કોર્ટ મુલાકાત.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">કોર્ટ મુલાકાત</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/ગ્રામ પંચાયત મુલાકાત.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">ગ્રામ પંચાયત મુલાકાત</div>
+                    </div>
+                  </div>
+                  
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/પોલીસ સ્ટેશન મુલાકાત.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">પોલીસ સ્ટેશન મુલાકાત</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/વ્રુક્ષા રોપણ.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">વ્રુક્ષા રોપણ</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/સ્વચ્છતા અભિયાન.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">સ્વચ્છતા અભિયાન</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/ગાયત્રી યજ્ઞ.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">ગાયત્રી યજ્ઞ</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/એસ.પી.સી..jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">એસ.પી.સી.</div>
+                    </div>
+                  </div>
+                  
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/સ્વ સુરક્ષા 1.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">સ્વ સુરક્ષા</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/સ્વ સુરક્ષા.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">સ્વ સુરક્ષા</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/શિક્ષક દિન.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">શિક્ષક દિન</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/સરસ્વતી સાયકલ સહાય.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">સરસ્વતી સાયકલ સહાય</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/યુવા ઉત્સવ.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">યુવા ઉત્સવ</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/યોગા.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">યોગા</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/વિજ્ઞાનમેળો.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">વિજ્ઞાનમેળો</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/વિદાયમાન.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">વિદાયમાન</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/ન્યુ શાળા પરિસર.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">ન્યુ શાળા પરિસર</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/મેડીકલ તપાસ.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">મેડીકલ તપાસ</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/શાળા પરિસર 1.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">શાળા પરિસર</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/શાળા પરિસર 2.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">શાળા પરિસર</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/શાળા પરિસર 3.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">શાળા પરિસર</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/શાળા પરિસર.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">શાળા પરિસર</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/પ્રાક્રુતી શિક્ષણ શિબિર.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">પ્રાક્રુતી શિક્ષણ શિબિર</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/પ્રવેશોત્સવ.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">પ્રવેશોત્સવ</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/3.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">આનંદ મેળો</div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/પ્રવાસ.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">પ્રવાસ</div>
+                    </div>
+                  </div> -->
+                  
+                  <div class="clearfix"></div>
+                  
             </div>
-        </div>
-    </section>
-    <!-- End gallery  -->
+        </section>
 
     {% endblock %}

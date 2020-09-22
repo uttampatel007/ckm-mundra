@@ -20,19 +20,19 @@ def contact(request):
 	context = {}
 	if request.method == "POST":
 		name = request.POST.get('author')
-		email = request.POST.get('email')
-		subject = request.POST.get('subject')
 		message = request.POST.get('comment')
+		address = request.POST.get('address')
+		phone = request.POST.get('phone')
 
-		c = Contact(name=name,email=email,subject=subject,message=message)
+		c = Contact(name=name,phone=phone,message=message,address=address)
 		c.save()
 
-		submit_message = " આભાર. અમે જલ્દી જ તમારો સંપર્ક કરીશું."
+		submit_message = " સંદેશ/અભિપ્રાય બદલ આભાર. અમે જલ્દી જ તમારો સંપર્ક કરીશું."
 		context = {'submit_message':submit_message}
-
-		recepient = 'uttam11.velani11@gmail.com'
-		message1 = 'Message From website \n NAME : %s \n EMAIL: %s \n SUBJECT: %s \n MESSAGE: %s' %(name,email,subject,message)
-		send_mail(subject, message1, EMAIL_HOST_USER, [recepient], fail_silently = False)
+		# subject = "SCHOOL WEBSITE CONTACT"
+		# recepient = 'uttam11.velani11@gmail.com'
+		# message1 = 'Message From website \n NAME : %s \n ADDRESS : %s \n PHONE: %s \n MESSAGE: %s' %(name,address,phone,message)
+		# send_mail(subject, message1, EMAIL_HOST_USER, [recepient], f	ail_silently = False)
 
 		return render(request, 'core/contact.html',context)
 	else:

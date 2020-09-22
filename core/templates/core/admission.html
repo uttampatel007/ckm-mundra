@@ -1,5 +1,7 @@
 {% extends 'core/base.html' %}
-
+{% block title %}
+<title>શાળાના નિયમ</title>
+{% endblock %}
 {% block content %}
     <style type="text/css">
         /* Style buttons */
@@ -24,17 +26,110 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="mu-page-breadcrumb-area">
-                            <h2>નિયમો</h2>
+                            <h2>શાળાના નિયમ</h2>
                             <ol class="breadcrumb">
                                 <li><a href="#">મુખપૃષ્ટ</a></li>            
-                                <li class="active">પ્રવેશના નિયમ</li>
+                                <li class="active">શાળાના નિયમ</li>
                             </ol>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    <section id="mu-about-us" style="margin-bottom: -3%;margin-top: -3%;">
+        <section>
+            <div class="container" style="display: flex;margin-top: 20px;flex-direction: column;"><br>
+                
+                <h2 style="text-align: center;font-weight: bold;margin-bottom: 5%;">Home-Learning આયોજન</h2>              
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <th>વિષય</th>
+                            <th>ગુજ.</th>
+                            <th>અંગ્રેજી</th>
+                            <th>હિન્દી</th>
+                            <th>સંસ્કૃત</th>
+                            <th>ગણિત</th>
+                            <th>વિજ્ઞાન</th>
+                            <th>સા.વિ.</th>
+                            <th>અર્થશાસ્ત્ર</th>
+                            <th>ભૂગોળ</th>
+                            <th>નામુ</th>
+                            <th>વા.વ્ય.</th>
+                            <th>એસ.પી</th>
+                            <th>સ.શા.</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>ધો.૯</th>
+                                <td>સોમ</td>
+                                <td>મંગળ</td>
+                                <td>બુધ</td>
+                                <td>ગુરુ</td>
+                                <td>શુક્ર,શનિ</td>
+                                <td>શુક્ર,શનિ</td>
+                                <td>રવિ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>ધો.૧૦</th>
+                                <td>રવિ</td>
+                                <td>સોમ,મંગળ</td>
+                                <td>મંગળ</td>
+                                <td></td>
+                                <td>ગુરુ,શુક્ર</td>
+                                <td>ગુરુ,શુક્ર</td>
+                                <td>શનિ,રવિ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>ધો.૧૧</th>
+                                <td>ગુરુ</td>
+                                <td>બુધ</td>
+                                <td>શુક્ર</td>
+                                <td>બુધ</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>શનિ</td>
+                                <td>મંગળ</td>
+                                <td>બુધ</td>
+                                <td>રવિ</td>
+                                <td>શુક્ર</td>
+                                <td>રવિ</td>
+                            </tr>
+                            <tr>
+                                <th>ધો.૧૨</th>
+                                <td>ગુરુ</td>
+                                <td>સોમ,મંગળ</td>
+                                <td>સોમ</td>
+                                <td>ગુરુ,શુક્ર</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>શનિ,રવિ</td>
+                                <td>બુધ</td>
+                                <td>ગુરુ,શુક્ર</td>
+                                <td>બુધ</td>
+                                <td>સોમ</td>
+                                <td>બુધ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    <section id="mu-about-us" style="margin-bottom: -3%;margin-top: -3%;font-size: 20px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -50,21 +145,23 @@
                                     <!-- End Title -->
                                     <ul>
                                         <li> હાજરીમાં અનિયમિતતા, અવિનય કે વાધાભરી વર્તણુંકનું કારણ મળતા વિદ્યાર્થીનું નામ કમી કરવામાં આવશે.</li>
-                                        <li>વિદ્યાર્થીએ શાળામાં કોઈ પણ પ્રકારનું નુકશાન કર્યું હશે તો તે ભરપાઈ કરી આપવાની રહશે.</li><br>
-                                        <li>શાળામાં નક્કી કરેલ સમાયું અને નક્કી કરેલું યુનિફોર્મ પહેરીને શાળામાં આવવાનું રહશે.</li><br>
-                                        <li>વિદ્યાર્થીને કોઈપણ પ્રકારની શારીરિક-માનસિક તકલીફ હોયતો શાળાને તેની જાણ અવશ્ય કરવાની રહશે.</li>
-                                        <li>પ્રસંગોપાત શાળામાં હજાર ન રહી શકવા બદલની જાણ માટે રજા ચીઠી શાળા ડાયરીમાં વાલીએ વર્ગ શિક્ષક સમક્ષ રજુ કરવાની રહશે.</li>
-                                    </ul>
+                                        <li>વિદ્યાર્થીએ શાળામાં કોઈ પણ પ્રકારનું નુકશાન કર્યું હશે તો તે ભરપાઈ કરી આપવાની રહેશે.</li><br>
+                                        <li>શાળામાં નક્કી કરેલ સમાયું અને નક્કી કરેલું યુનિફોર્મ પહેરીને શાળામાં આવવાનું રહેશે.</li><br>
+                                        <li>વિદ્યાર્થીને કોઈપણ પ્રકારની શારીરિક-માનસિક તકલીફ હોયતો શાળાને તેની જાણ અવશ્ય કરવાની રહેશે.</li>
+                                        <li>પ્રસંગોપાત શાળામાં હજાર ન રહી શકવા બદલની જાણ માટે રજા ચીઠી શાળા ડાયરીમાં વાલીએ વર્ગ શિક્ષક સમક્ષ રજુ કરવાની રહેશે.</li>
+                                    </ul>રહેશે
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="mu-about-us-right"> 
                                     <ul>
                                         <li>શાળામાં પ્રાર્થનામાં હાજરી આપવાની ફરજીયાત છે.</li><br>
-                                        <li>વિદ્યાર્થીની  ગેરહાજરી કે અનિયમિતતા  કે અભ્યાસ સબંધી ભલામણ કરવા માટે બોલવામાં આવે ત્યારે વાલી એ રૂબરૂ આવવાનું રહશે.</li>
+                                        <li>વિદ્યાર્થિનીએ  ગેરહાજરી કે અનિયમિતતા  કે અભ્યાસ સંબંધી ભલામણ કરવા માટે બોલવામાં આવે ત્યારે વાલી એ રૂબરૂ આવવાનું રહેશે.</li>
                                         <li>સતત ત્રણ દિવસ સુધી જાણ કાર્ય વગર ગેરહાજર રેહનાર વિદ્યાર્થીનું નિયમ અનુસાર શાળામાંથી નામ કમી કરવામાં આવશે.</li>
-                                        <li>વિદ્યાર્થીઓએ વર્ગકાર્ય અને ગૃહકાર્ય ફરજીયાત કરવાનું રહશે.</li><br>
-                                        <li>શાળામાં વિદ્યાર્થીનીએ મોબાઈલ લઇ આવવા પર સખત પ્રતિબંધ છે.</li>
+                                        <li>વિદ્યાર્થિનીએ વર્ગકાર્ય અને ગૃહકાર્ય ફરજીયાત કરવાનું રહેશે.</li><br>
+                                        <li>સાળાએ આવવા જવા માટે વિદ્યાર્થિની સાયકલ સિવાય કોઈ પણ પ્રકારના ટુ વ્હીલર સાધનનો ઉપયોગ કરી શકશે નહી.
+                                        </li>
+                                        <li>શાળામાં વિદ્યાર્થિનીએ મોબાઈલ લઇ આવવા પર સખત પ્રતિબંધ છે.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -80,6 +177,45 @@
             <p style="text-align: center;">શાળામાં પ્રવેશ મેળવવા માટે નીચે આપેલી લિંક દ્વારા ફોર્મ ને ડાઉનલોડ કરવાનું રહશે.</p>
             <button class="btn" style="width: 100%;outline: none;"><i class="fa fa-download"></i> Download
             </button>
+        </div>
+    </section>
+    <section id="mu-about-us" style="margin-bottom: -3%;margin-top: -3%;font-size: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-about-us-area">           
+                        <div class="row">
+                            <div class="mu-title">
+                                <h3 style="text-align: center;font-weight: bold;margin-bottom: 5%;">બિડાણ</h3>              
+                            </div> 
+                            <div class="col-lg-6 col-md-6">
+                                <div class="mu-about-us-left">
+                                    <!-- Start Title -->
+                                    <h4>અરજી સાથે જોડવાના પ્રમાણપત્રો</h4>
+                                    <!-- End Title -->
+                                    <ol>
+                                        <li>અરજી</li>
+                                        <li>શાળા છોડવાનું પ્રમાણપત્ર અસલ</li>
+                                        <li>પરિણામ પાત્રની નકલ</li>
+                                        <li>વિદ્યાર્થિનીએ આધારકાર્ડની નકલ</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="mu-about-us-right"> 
+                                    <h4>શાળા ખુલે ત્યારે લાવવાના પ્રમાણપત્ર(શિષ્યવૃતિ માટે)</h4>
+                                    <ol>
+                                        <li>વિદ્યાર્થિનીના શાળા છોડવાનું પ્રમાણપત્રની નકલ-૨</li>
+                                        <li>વિદ્યાર્થિનીના જાતિ પ્રમાણપત્ર નકલ-૨</li>
+                                        <li>વાલીના આવકના દાખલાની નકલ-૨</li>
+                                        <li>વિદ્યાર્થિનીના બેન્ક પાસ બુકની નકલ-૨</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <br>
