@@ -846,7 +846,7 @@ img {
   transform: translateY(0%);
 }
 #mu-our-teacher .mu-our-teacher-area .mu-our-teacher-content .mu-our-teacher-single .mu-our-teacher-img {
-  background-color: #ccc;
+  background-color: none;
   display: inline;
   position: relative;
   float: left;

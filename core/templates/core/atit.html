@@ -1,0 +1,180 @@
+  {% extends 'core/base.html' %}
+  {% load static %}
+  {% block title %}
+<title>અતીતની  અટારીએ - CKM</title>
+{% endblock %}
+  {% block content %}
+  <style>
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+    
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+    
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+    
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    </style>
+  <!--START SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>      
+    </a>
+  <!-- END SCROLL TOP BUTTON -->
+        <!-- Page breadcrumb -->
+        <section id="mu-page-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-page-breadcrumb-area">
+                            <h2>અતીતની  અટારીએ</h2>
+                            <ol class="breadcrumb">
+                                <li><a href="#">મુખપૃષ્ટ</a></li>            
+                                <li class="active">અતીતની  અટારીએ</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End breadcrumb -->
+        <section>
+          <div class="container" style="margin-top: 20px;display: inline;">
+                  
+                  <div class="responsive" style="display: inline;">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/atit/2.jpg' %}" alt="Forest" width="600" height="400">
+                      </a>
+                      <div class="desc">ધ્વજવંદન</div>
+                    </div>
+                  </div>
+                  
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/atit/3.jpg' %}" alt="Northern Lights" width="600" height="400">
+                      </a>
+                      <div class="desc">ધ્વજવંદન</div>
+                    </div>
+                  </div>
+                  
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/atit/4.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">ભુમી પૂજન</div>
+                    </div>
+                  </div>
+
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/atit/5.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">ભુમી પૂજન</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/atit/6.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">ધો.12 100% સન્માન</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/atit/7.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">ધો.12 વિદાયમાન</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/atit/8.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">કોર્ટ મુલાકાત</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/atit/9.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">ગ્રામ પંચાયત મુલાકાત</div>
+                    </div>
+                  </div>
+                  
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/atit/10.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">પોલીસ સ્ટેશન મુલાકાત</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/atit/11.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">વ્રુક્ષા રોપણ</div>
+                    </div>
+                  </div>
+                 
+
+                  <!-- <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="">
+                        <img src="{% static 'core/assets/img/gallery/પ્રવાસ.jpg' %}" alt="Mountains" width="600" height="400">
+                      </a>
+                      <div class="desc">પ્રવાસ</div>
+                    </div>
+                  </div> -->
+                  
+                  <div class="clearfix"></div>
+                  
+            </div>
+        </section>
+
+    {% endblock %}

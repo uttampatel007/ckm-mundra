@@ -51,3 +51,6 @@ def memories(request):
 
 def co_curricular(request):
 	return render(request, 'core/activity.html')
+
+def poorak(request):
+	return render(request, 'core/atit.html')

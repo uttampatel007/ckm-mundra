@@ -13,4 +13,6 @@ urlpatterns = [
     path('school_family/',school_family,name="school_family"),
     path('memories/',memories,name="memories"),
     path('co_curricular/',co_curricular,name="co_curricular"),
+    path('atit/',poorak,name="poorak"),
+
 ]  
