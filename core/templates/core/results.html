@@ -1,4 +1,5 @@
 {% extends 'core/base.html' %}
+{% load static %}
 {% block title %}
 <title>પરિણામ</title>
 {% endblock %}
@@ -77,91 +78,116 @@
 		</div>
 	</div>
 	
-	<section>
-        <div class="container">
-            <div class="row">                
-            
-            <div class="mu-title">
-                <h3><b>સી.કે.એમ કન્યા વિદ્યાલય મુંદરા</b><br><br>વર્ગવાર-જાતિવાર વિદ્યાર્થિઓની સંખ્યા-૨૦૨૦-૨૧</h3><br>
-            </div>
-            <div class="table-responsive|table-responsive-sm|table-responsive-md|table-responsive-lg|table-responsive-xl customTable">
-                <table class="table table-dark table-bordered">
-                    <thead>
-                        <tr>
-                            <th class="text-center" style="">ધોરણ</th>
-                            <th class="text-center">અ.જા</th>
-                            <th class="text-center">અ.જ.જા</th>
-                            <th class="text-center">બક્ષીપંચ</th>
-                            <th class="text-center">અન્ય</th>
-                            <th class="text-center">કુલ</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>૯.અ</td>
-                            <td>16</td>
-                            <td>01</td>
-                            <td>23</td>
-                            <td>30</td>
-                            <td>70</td>
-                        </tr>
-                        <tr>
-                            <td>૯.બ</td>
-                            <td>28</td>
-                            <td>01</td>
-                            <td>20</td>
-                            <td>18</td>
-                            <td>67</td>
-                        </tr>
-                        <tr>
-                            <td>૧૦.અ</td>
-                            <td>23</td>
-                            <td>02</td>
-                            <td>23</td>
-                            <td>27</td>
-                            <td>75</td>
-                        </tr>
-                        <tr>
-                            <td>૧૦.બ</td>
-                            <td>32</td>
-                            <td>-</td>
-                            <td>21</td>
-                            <td>20</td>
-                            <td>73</td>
-                        </tr>
-                        <tr>
-                            <td>૧૧</td>
-                            <td>29</td>
-                            <td>-</td>
-                            <td>28</td>
-                            <td>30</td>
-                            <td>87</td>
-                        </tr>
-                        <tr>
-                            <td>૧૨</td>
-                            <td>32</td>
-                            <td>02</td>
-                            <td>27</td>
-                            <td>38</td>
-                            <td>99</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th class="text-center">કુલ</th>
-                            <td>160</td>
-                            <td>06</td>
-                            <td>142</td>
-                            <td>163</td>
-                            <td>471</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
-             
-            </div>  
-        </div>
-    </section>
 	
+	<style>
+        div.gallery {
+          border: 1px solid #ccc;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .responsive {
+          padding: 6px 6px;
+          float: left;
+          width: 32.99999%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 49.99999%;
+            margin: 6px 0px;
+    
+          }
+        }
+        
+        @media only screen and (max-width: 500px) {
+          .responsive {
+            width: 100%;
+          }
+        }
+        
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
+            <!-- End breadcrumb -->
+            <section>
+              <div class="container">
+    
+                      <div class="responsive" style="display: inline;">
+                        <div class="gallery">
+                          <a target="_blank" href="">
+                            <img src="{% static 'core/assets/img/result/1.jpg' %}" alt="Forest" width="600" height="400">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="responsive" style="display: inline;">
+                        <div class="gallery">
+                          <a target="_blank" href="">
+                            <img src="{% static 'core/assets/img/result/2.jpg' %}" alt="Forest" width="600" height="400">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="responsive" style="display: inline;">
+                        <div class="gallery">
+                          <a target="_blank" href="">
+                            <img src="{% static 'core/assets/img/result/5.jpg' %}" alt="Forest" width="600" height="400">
+                          </a>
+                        </div>
+                      </div>
+                      
+                      <div class="clearfix"></div>
+                      
+                
+                </div>
+                <div class="container">
+    
+                    <div class="responsive" style="display: inline;">
+                      <div class="gallery">
+                        <a target="_blank" href="">
+                          <img src="{% static 'core/assets/img/result/3.jpg' %}" alt="Forest" width="600" height="400">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="responsive" style="display: inline;">
+                      <div class="gallery">
+                        <a target="_blank" href="">
+                          <img src="{% static 'core/assets/img/result/4.jpg' %}" alt="Forest" width="600" height="400">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="responsive" style="display: inline;">
+                      <div class="gallery">
+                        <a target="_blank" href="">
+                          <img src="{% static 'core/assets/img/result/6.jpg' %}" alt="Forest" width="600" height="400">
+                        </a>
+                      </div>
+                    </div>
+                    
+                    <div class="clearfix"></div>
+                    
+              
+              </div>
+              
+            </section>
+    
 	<br>
 {% endblock %}

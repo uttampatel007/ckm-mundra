@@ -48,14 +48,17 @@
                             <li {% if request.path == history_url %} class="active" {%endif%}><a href="{% url 'core:history' %}">શાળા ઇતિહાસ</a></li>
                             
                             <li {% if request.path == school_family_url %} class="active" {%endif%}><a href="{% url 'core:school_family' %}">શાળા પરિવાર</a></li>
+
+                            <li {% if request.path == admission_url %} class="active" {%endif%}><a href="{% url 'core:admission' %}">શાળાના નિયમ</a></li>  
+                            
+                            <li  {% if request.path == result_url %} class="active" {%endif%}><a href="{% url 'core:result' %}">પરિણામ</a></li>
+                            
                             <li {% if request.path == co_curricular %} class="active" {%endif%}><a href="{% url 'core:co_curricular' %}">પૂરક પ્રવૃત્તિઓ</a></li>
                             
-                            <li {% if request.path == admission_url %} class="active" {%endif%}><a href="{% url 'core:admission' %}">શાળાના નિયમ</a></li>            
-
                             <li {% if request.path == gallery_url %} class="active" {%endif%}><a href="{% url 'core:gallery' %}">યાદેં</a></li>
+
                             <li {% if request.path == poorak %} class="active" {%endif%}><a href="{% url 'core:poorak' %}">અતીતની અટારીએ</a></li>
 
-                            <li  {% if request.path == result_url %} class="active" {%endif%}><a href="{% url 'core:result' %}">પરિણામ</a></li>
                             <li {% if request.path == contact_url %} class="active" {%endif%}><a href="{% url 'core:contact' %}">સંપર્ક</a></li>
                         </ul>
                     </div>
