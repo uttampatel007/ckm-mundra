@@ -29,10 +29,10 @@ def contact(request):
 
 		submit_message = " સંદેશ/અભિપ્રાય બદલ આભાર. અમે જલ્દી જ તમારો સંપર્ક કરીશું."
 		context = {'submit_message':submit_message}
-		# subject = "SCHOOL WEBSITE CONTACT"
-		# recepient = 'uttam11.velani11@gmail.com'
-		# message1 = 'Message From website \n NAME : %s \n ADDRESS : %s \n PHONE: %s \n MESSAGE: %s' %(name,address,phone,message)
-		# send_mail(subject, message1, EMAIL_HOST_USER, [recepient], f	ail_silently = False)
+		subject = "SCHOOL WEBSITE CONTACT"
+		recepient = 'ckmghs@yahoo.com'
+		message1 = 'Message From website \n NAME : %s \n ADDRESS : %s \n PHONE: %s \n MESSAGE: %s' %(name,address,phone,message)
+		send_mail(subject, message1, EMAIL_HOST_USER, [recepient], fail_silently = False)
 
 		return render(request, 'core/contact.html',context)
 	else:

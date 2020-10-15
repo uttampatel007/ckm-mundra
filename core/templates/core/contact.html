@@ -44,7 +44,7 @@
                                         {% if submit_message %}
                                             {{submit_message}}
                                         {% else %}
-                                        <form class="contactform" target="{% url 'core:contact' %}" method="POST">
+                                        <form class="contactform" target="" method="POST">
                                             {% csrf_token %}                  
                                             <p class="comment-form-author">
                                                 <label for="author">નામ <span class="required">*</span></label>
