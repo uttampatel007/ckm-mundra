@@ -31,7 +31,7 @@ def contact(request):
 		context = {'submit_message':submit_message}
 		subject = "SCHOOL WEBSITE CONTACT"
 		recepient = 'ckmghs@yahoo.com'
-		message1 = 'Message From website \n NAME : %s \n ADDRESS : %s \n PHONE: %s \n MESSAGE: %s' %(name,address,phone,message)
+		message1 = 'Contact Message From Website \n NAME : %s \n ADDRESS : %s \n PHONE NO.: %s \n MESSAGE(સંદેશ/અભિપ્રાય): %s' %(name,address,phone,message)
 		send_mail(subject, message1, EMAIL_HOST_USER, [recepient], fail_silently = False)
 
 		return render(request, 'core/contact.html',context)
